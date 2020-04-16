@@ -78,6 +78,10 @@ $(document).ready(function() {
 		color = "Yellow";
 		$(".brush").css('background-color', 'Yellow');
 	})
+	$(".Eraser").click(function() {
+		color = "rgb(235, 255, 255)";
+		$(".brush").css('background-color', 'rgb(235, 255, 255)');
+	})
 
 	$("#grid").click(function() {
 		if(grid) {
@@ -91,4 +95,6 @@ $(document).ready(function() {
 			$("#paint td").css('border', '1px solid rgb(0,0,0,0.1)');
 		}
 	})
+
+
 })

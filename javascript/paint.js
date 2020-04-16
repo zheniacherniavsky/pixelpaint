@@ -31,16 +31,16 @@ $(document).ready(function() {
 		$(this).removeClass();
 		$(this).addClass(color);
 	});
-	$("#paint").mousedown(function(){ 
+	$("#paint td").mousedown(function(){ 
 	    paint = true;
 	    $("#configIcon").fadeOut("fast");
 	});
-	$("#paint").mouseup(function(){ 
+	$("#paint td").mouseup(function(){ 
 	    paint = false;
 	    $("#configIcon").fadeIn("fast");
 	});
 
-	$("td").hover(function() {
+	$("#paint td").hover(function() {
 		if(paint) {
 			$(this).removeClass();
 			$(this).addClass(color);
